@@ -1,0 +1,24 @@
+Possible execution flows:
+Exceptionals:
+    - User presses an operation button without having written an operand before (just started calculator)
+    - User presses equals without having written an operand of after written first operand
+    In any case, nothing happens
+Normal flow:
+    1. User presses a number button, number is shown on display.
+    2. User presses an operation button, operation is defined but not shown on display.
+    3. User presses a number button, number is shown on display. Operation is ready to be executed.
+    4. Uses presses equals button, operation is executed.
+    5. Result is shown on display.
+Alternate flow 1, resumes from 4 (replaces from that step):
+    4.1. User presses operation button (second operand has already been resumed)
+    4.2. Previous operation is executed and result is shown on display.
+    4.3. Previos result is used as first operand for new operation.
+    4.4. Resumes normal flow from 3.
+Flujo alternativo 2:
+    3.1. User presses operation button again.
+    3.2. Previously defined operator is replaced by newly pressed button.
+    3.3. Resumes normal flow from 3.
+Flujo alternativo 3, happens after normal flow:
+    6. User presses operation button.
+    7. Previous operation result is used as first operand.
+    8. Resumes normal flown from 3.

@@ -14,11 +14,11 @@ Alternate flow 1, resumes from 4 (replaces from that step):
     4.2. Previous operation is executed and result is shown on display.
     4.3. Previos result is used as first operand for new operation.
     4.4. Resumes normal flow from 3.
-Flujo alternativo 2:
+Alternate flow 2:
     3.1. User presses operation button again.
     3.2. Previously defined operator is replaced by newly pressed button.
     3.3. Resumes normal flow from 3.
-Flujo alternativo 3, happens after normal flow:
-    6. User presses operation button.
-    7. Previous operation result is used as first operand.
-    8. Resumes normal flown from 3.
+Alternate flow 3, happens after normal flow:
+    5.1. User presses operation button.
+    5.2. Previous operation result is used as first operand.
+    5.3. Resumes normal flow from 3.

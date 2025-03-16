@@ -14,7 +14,7 @@ function showInstructions() {
 
     preface.innerText = "The following execution flow was used to develop the calculator. It can be used as a hint on how to use.";
 
-    fetch("../execution-flows.txt")
+    fetch("execution-flows.txt")
         .then(response => response.text())
         .then(t => text.innerText = t);
 
